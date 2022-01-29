@@ -3,3 +3,116 @@
     margin: 0;
     padding: 0;
 }
+
+body
+{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* height: 100vh; */
+    max-width: 100%;
+    background: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg") no-repeat center center/cover;
+}
+
+.title
+{
+    margin: 1rem;
+    text-align: center;
+}
+
+#title
+{
+    margin: 1rem;
+    color: white;
+}
+#description
+{
+    margin: 1rem;
+    font-style: italic;
+    color: white;
+}
+
+#survey-form
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5rem;
+    margin: auto;
+    background: rgb(18 11 53 / 58%);
+    max-width: 50%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#survey-form .contact-details
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact-details input
+{
+    margin: 0.5rem 0;
+    width: 20rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.dropdown
+{
+    margin-bottom: 2rem;
+}
+
+#dropdown
+{
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+}
+
+.radio
+{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio label input
+{
+margin: 0.5rem;
+}
+
+.checkbox
+{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox label input
+{
+    margin: 0.5rem;
+}
+
+.message textarea
+{
+    width: 30vw;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+#submit
+{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
