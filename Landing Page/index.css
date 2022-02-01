@@ -1,0 +1,76 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#header
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: cyan;
+    min-height: 5rem;
+    width: 100%;
+}
+
+#header-img
+{
+    position: relative;
+    top: 0.5rem;
+    width: 350px;
+}
+
+#nav-bar
+{
+    position: relative;
+    top: 0.5rem;
+    display: flex;
+    width: 40vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#nav-bar li 
+{
+list-style: none;
+}
+
+#nav-bar li a
+{
+    color: black;
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+#first
+{
+    position: relative;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.email
+{
+    /* background: rgb(55, 61, 61); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#features
+{
+    background: yellow;
+    height: 200px;
+    width: 200px;
+}
