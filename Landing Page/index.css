@@ -4,28 +4,34 @@
     padding: 0;
 }
 
+body
+{
+    background: rgba(241, 236, 236, 0.658);
+}
+
 #header
 {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: cyan;
-    min-height: 5rem;
+    background: rgba(241, 236, 236);
+    min-height: 4rem;
     width: 100%;
+    z-index: 2;
 }
 
 #header-img
 {
     position: relative;
-    top: 0.5rem;
+    /* top: 0.5rem; */
     width: 350px;
 }
 
 #nav-bar
 {
     position: relative;
-    top: 0.5rem;
+    /* top: 0.5rem; */
     display: flex;
     width: 40vw;
     font-size: 1.5rem;
@@ -67,10 +73,143 @@ list-style: none;
     flex-direction: column;
 }
 
+.email h3
+{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#email
+{
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 1rem;
+}
+
+#submit
+{
+    font-size: 1rem;
+    background: rgb(214, 185, 185);
+    width: 150px;
+    padding: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
 
 #features
 {
-    background: yellow;
-    height: 200px;
-    width: 200px;
+    /* background: yellow; */
+    margin-top: 5rem;
+}
+
+.features
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.icon
+{
+    margin: auto 2rem;
+    color: rgba(255, 166, 0, 0.884);
+}
+
+#work
+{
+    position: relative;
+    top: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#pricing
+{
+    position: relative;
+    top: 10rem;
+    /* background: orchid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pricing-cards
+{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 20%;
+}
+
+.pricing-cards h3
+{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background: rgba(241, 236, 236);
+}
+
+.pricing-cards .price
+{
+    margin: 0.6rem auto;
+    font-size: 1.3rem;
+}
+ 
+.pricing-cards p
+{
+    margin: 0.3rem auto;
+}
+
+#btnSelect
+{
+    width: fit-content;
+    align-self: center;
+    margin: 1rem auto;
+    background: rgb(243, 188, 149);
+    padding: 0.2rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    #header
+    {
+        flex-direction: column;
+    }
+
+    #nav-bar
+    {
+        flex-direction: column;
+    }
+
+    #first
+    {
+        top: 10rem;
+    }
+
+    .features
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    #work
+    {
+        top: 10rem;
+    }
+
+    #pricing
+    {
+        top: 15rem;
+    }
 }
